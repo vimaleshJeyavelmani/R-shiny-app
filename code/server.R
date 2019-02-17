@@ -3,7 +3,7 @@ library(shiny)
 shinyServer(function(input, output,session) {
    
  data <- reactive({
- rnom(50)*input$sid
+ rnorm(50) * input$sid
  })
   
  output$plot <- renderPlot({
