@@ -1,5 +1,5 @@
 library(shiny)
 
 shinyUI(fluidPage(
-h1("using text box and check box"),textInput("str1","wirte here"),textInput("str2","output")
+h1("Reactive"),SliderInput(inputId="sid",label="slider",value=1,min=1,max=30),plotOutput("plot")
 ))
